@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tipenwon</title>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="javascripts/jquery.mobile-1.4.4/jquery.mobile-1.4.4.css" />
+	<link rel="stylesheet" href="javascripts/bootstrap-3.2.0-dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="stylesheets/login.css" />
+	
+	<script src="javascripts/jquery-2.1.1/jquery-2.1.1.js"></script>
+	<script src="javascripts/jquery.mobile-1.4.4/jquery.mobile-1.4.4.js"></script>
+	
+	
+	<script>
+
+	</script>
+	
+</head>
+<body>
+	<div class="loginHeader" data-role="navbar">
+		<span>Check In/Out</span>
+	</div>
+
+	<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+	     <tbody>
+	       <tr>
+	         <td>name (id)</td>
+	         <td><%= data.name %> (<%= data.userid %>)</td>
+	       </tr>
+	       <tr>
+	         <td>Date</td>
+	         <td><%= currentTime %></td>
+	       </tr>
+	       <tr>
+	         <td>Note</td>
+	         <td>
+				<label for="userNote" class="ui-hidden-accessible">아이디:</label>
+				<input type="text" name="userNote" id="userNote" placeholder="" value="" >
+	         </td>
+	       </tr>
+	     </tbody>
+	   </table>
+
+	   <div class="timeinout">
+	   		<button id="checkin" class="ui-btn">In</button>
+	   		<button id="checkout" class="ui-btn">Out</button>
+	   </div>
+
+
+
+</body>
+</html>

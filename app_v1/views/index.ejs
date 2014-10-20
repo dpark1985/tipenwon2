@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tipenwon</title>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="javascripts/jquery.mobile-1.4.4/jquery.mobile-1.4.4.css" />
+	<link rel="stylesheet" href="javascripts/bootstrap-3.2.0-dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="stylesheets/login.css" />
+	
+	<script src="javascripts/jquery-2.1.1/jquery-2.1.1.js"></script>
+	<script src="javascripts/jquery.mobile-1.4.4/jquery.mobile-1.4.4.js"></script>
+	
+	
+	<script>
+
+	</script>
+	
+</head>
+<body>
+	<div class="loginHeader" data-role="navbar">
+		<span>로그인</span>
+	</div>
+
+
+	<form method="post">
+		<fieldset>
+			<div class="loginInput">
+				<label for="userId" class="ui-hidden-accessible">아이디:</label>
+				<input type="text" name="userId" id="userId" placeholder="아이디:" value="" >
+				<label for="userPw" class="ui-hidden-accessible">비밀번호:</label>
+				<input type="password" name="userPw" id="userPw" placeholder="비밀번호:" value="" >
+			</div>
+			<div class="loginBtn">
+				<div class="loginBtnText">
+					<a href="#">아이디 찾기</a>
+					<span>|</span>
+					<a href="#">비밀번호 찾기</a>
+				</div>
+				<button type="submit" id="loginBtn" class="ui-btn">로그인</button>
+			</div>
+			<div class="loginJoin">
+				<button id="signUp" class="ui-btn">회원가입</button>
+				<p>Welcome to <%= title %></p>
+			</div>
+		</fieldset>
+	</form>
+
+</body>
+</html>

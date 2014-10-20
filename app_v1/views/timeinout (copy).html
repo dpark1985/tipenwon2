@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tipenwon</title>
+	<meta charset="utf8"/>
+	<meta name="viewport" content="initial-scale=1, user-scalable=no" />
+	
+	<link rel="stylesheet" href="javascripts/jquery.mobile-1.4.4/jquery.mobile-1.4.4.css" />
+	<link rel="stylesheet" href="javascripts/bootstrap-3.2.0-dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="stylesheets/login.css" />
+	
+	<script src="javascripts/jquery-2.1.1/jquery-2.1.1.js"></script>
+	<script src="javascripts/jquery.mobile-1.4.4/jquery.mobile-1.4.4.js"></script>
+	
+	
+	<script>
+
+	</script>
+	
+</head>
+<body>
+	<div class="loginHeader" data-role="navbar">
+		<span>Check In/Out</span>
+	</div>
+
+	<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+	     <tbody>
+	       <tr>
+	         <td>name (id)</td>
+	         <td><%= userName %> (<%= userId %>)</td>
+	       </tr>
+	       <tr>
+	         <td>1942</td>
+	         <td><%= currentTime %></td>
+	       </tr>
+	       <tr>
+	         <td>1972</td>
+	         <td>97%</td>
+	       </tr>
+	     </tbody>
+	   </table>
+
+	   <div>
+	   		<button id="checkin" class="ui-btn">In</button>
+	   		<button id="checkout" class="ui-btn">Out</button>
+	   </div>
+
+</body>
+</html>

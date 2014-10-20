@@ -1,0 +1,39 @@
+.loginHeader{
+	height: 30px;
+	background-color: #3388cc;
+}
+.loginHeader > span{
+	text-align: center;
+	display: block;
+	line-height: 30px;
+	color: white;
+}
+.loginInput{
+	margin-top: 50px;
+}
+.loginBtn{
+	width: 200px;
+	margin:0 auto;
+	margin-top: 50px;
+	text-align: center;
+}
+.loginBtnText{
+	font-size: 0.8em;
+}
+.loginJoin{
+	width: 200px;
+	margin:0 auto;
+	margin-top: 50px;
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited{
+	background-color: #3388cc;
+	color: white;
+	text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #000000 /*{a-bup-shadow-color}*/;
+}
+
+.timeinout{
+	width: 200px;
+	text-align: center;
+	margin:0 auto;
+	margin-top: 50px;
+}
