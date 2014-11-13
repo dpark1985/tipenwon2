@@ -22,33 +22,28 @@ router.get('/', function(req, res) {
 router.post('/', function(req, res) {
   id = req.body.userId;
   pw = req.body.userPw;
-
   //console.log('====================' + id + ' ' + pw + '====================');
-
+  
   client.query('SELECT * FROM membership WHERE (userid = ?) AND (userpw = ?)', [id, pw], function(error, results, fields){
   	if(error){
-  		console.log('==============query error===================')
+  		console.log('==============query error===================');
   	} 
-
     if(results.length > 0){
-      console.log('==============query good===================')
+      console.log('==============query good===================');
       console.log(results[0].userid + ' ' + results[0].userpw);
       res.redirect('/timeinout'); 
     }else{
-      console.log('==============query bad===================')
+      console.log('==============query bad===================');
       res.redirect('/signup');
     }
-
-
-
   });
 });
 
 /* GET timeinout page. */
 router.get('/timeinout', function(req, res){
 	var serverTime = new Date();
-  console.log('==============timeinout===================');
-  //console.log('====================' + id + ' ' + pw + '====================');
+	console.log('==============timeinout===================');
+	//console.log('====================' + id + ' ' + pw + '====================');
 	client.query('SELECT * FROM membership WHERE userid=?', [id], function(error, results, field){
 		if(error){
       console.log('error');
@@ -66,7 +61,7 @@ router.get('/timeinout', function(req, res){
 
 /* POST timeinout page. */
 router.post('/timeinout', function(req, res){
-
+	client.query('')
 });
 
 /* GET singup page. */
